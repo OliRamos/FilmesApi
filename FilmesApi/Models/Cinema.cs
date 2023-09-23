@@ -9,5 +9,7 @@ namespace FilmesApi.Models
         public int Id { get; set; }
         [Required(ErrorMessage = "Um nome é necessário")]
         public string Nome { get; set; }
+        public int EnderecoId { get; set; }
+        public virtual Endereco Endereco { get; set; }
     }
 }
